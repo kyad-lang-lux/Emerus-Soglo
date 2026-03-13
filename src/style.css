@@ -37,7 +37,7 @@ a {
 /* --- Structure de la Navbar --- */
 .navbar-container {
   height: var(--navbar-height);
-  padding: 0 40px;
+  padding: 0 35px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,7 +52,7 @@ a {
 .nav-logo-link {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 13px;
 }
 
 .sje-logo-box {
@@ -112,7 +112,7 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 25px;
 }
 
 .nav-link {
@@ -153,10 +153,10 @@ a {
   gap: 10px;
   background-color: var(--accent-color);
   color: #fff;
-  padding: 12px 25px;
+  padding: 10px 22px;
   border-radius: 50px;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 800;
+  font-size: 17px;
   border: none;
   cursor: pointer;
   transition: var(--transition);
@@ -288,17 +288,18 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 16px;
+  padding: 4px 14px;
   border: 1px solid var(--accent-color);
   border-radius: 50px;
-  font-size: 14px;
+  background: rgba(147, 51, 234, 0.2);
+  font-size: 12px;
   color: var(--accent-color);
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .dot-pulse {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   background-color: var(--accent-color);
   border-radius: 50%;
   box-shadow: 0 0 0 0 rgba(147, 51, 234, 0.7);
@@ -307,7 +308,7 @@ a {
 
 /* Titre principal */
 .hero-title {
-  font-size: clamp(35px, 7vw, 70px);
+  font-size: clamp(35px, 6vw, 70px);
   font-weight: 700;
   line-height: 1;
   margin-bottom: 30px;
@@ -325,7 +326,7 @@ a {
 
 /* Description */
 .hero-description {
-  font-size: 18px;
+  font-size: 17px;
   color: var(--text-secondary);
   line-height: 1.6;
   max-width: 600px;
@@ -368,10 +369,14 @@ a {
 .primary-btn {
   background: var(--accent-color);
   color: white;
-  padding: 15px 30px;
-  border-radius: 12px;
+  padding: 10px 20px;
+  border-radius: 30px;
   font-weight: 600;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
   display: flex;
+  font-size: 15px;
   align-items: center;
   gap: 10px;
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -384,12 +389,15 @@ a {
 .secondary-btn {
   background: transparent;
   color: white;
-  padding: 15px 30px;
-  border-radius: 12px;
+  padding: 12px 20px;
+  border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   gap: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
 }
 
@@ -412,7 +420,7 @@ a {
   position: relative;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.02);
-  background: url(../public/img/moi.jpg);
+  background: url(../public/img/me.png);
   background-position: center;
   background-size: cover;
 }
@@ -471,7 +479,7 @@ a {
 
 /* --- About Section Styles --- */
 .about-section {
-  padding: 80px 40px;
+  padding: 70px 40px;
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
@@ -481,17 +489,20 @@ a {
 }
 
 .about-text-content h2 {
-  font-size: 36px;
+  font-size: 35px;
   font-weight: 700;
   margin-bottom: 25px;
 }
 
 .about-text-content h2 span {
   color: var(--accent-color);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
 }
 
 .about-paragraph {
-  font-size: 17px;
+  font-size: 16px;
   color: var(--text-secondary);
   line-height: 1.8;
   margin-bottom: 30px;
@@ -518,13 +529,13 @@ a {
 .about-cards-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 15px;
 }
 
 .about-card {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 30px;
+  padding: 25px;
   border-radius: 20px;
   transition: var(--transition);
   display: flex;
@@ -539,8 +550,8 @@ a {
 }
 
 .card-icon {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   background: rgba(147, 51, 234, 0.1);
   color: var(--accent-color);
   border-radius: 12px;
@@ -551,12 +562,12 @@ a {
 }
 
 .about-card h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
 .about-card p {
-  font-size: 14px;
+  font-size: 12px;
   color: var(--text-secondary);
   line-height: 1.5;
 }
@@ -594,22 +605,25 @@ a {
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 50px;
-  gap: 20px;
+  gap: 15px;
 }
 
 .skills-header h2 {
-  font-size: 36px;
+  font-size: 35px;
   font-weight: 700;
 }
 
 .skills-header h2 span {
   color: var(--accent-color);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
 }
 
 .skills-subtitle {
   max-width: 500px;
   color: var(--text-secondary);
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.6;
   text-align: right;
 }
@@ -618,13 +632,13 @@ a {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 20px;
 }
 
 .skill-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 35px;
+  padding: 25px;
   border-radius: 24px;
   transition: var(--transition);
 }
@@ -645,13 +659,13 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .skill-card h3 {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* Container des tags */
@@ -664,9 +678,9 @@ a {
 .skill-tag {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 6px 14px;
+  padding: 5px 13px;
   border-radius: 50px;
-  font-size: 13px;
+  font-size: 12px;
   color: var(--text-secondary);
   transition: var(--transition);
 }
@@ -707,19 +721,22 @@ a {
 }
 
 .projects-section h2 {
-  font-size: 36px;
+  font-size: 35px;
   font-weight: 700;
   margin-bottom: 50px;
 }
 
 .projects-section h2 span {
   color: var(--accent-color);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 25px;
 }
 
 .project-card {
@@ -747,6 +764,7 @@ a {
 
 .project-image img {
   width: 100%;
+  padding: 1px;
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
@@ -760,21 +778,21 @@ a {
 
 /* Contenu de la carte */
 .project-info {
-  padding: 30px;
+  padding: 20px;
 }
 
 .project-info h3 {
   font-family: 'Poppins', serif; /* Ou ta font serif préférée */
-  font-size: 22px;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
 .project-info p {
-  font-size: 14px;
+  font-size: 12px;
   color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   min-height: 45px;
 }
 
@@ -782,14 +800,14 @@ a {
 .project-tags {
   display: flex;
   gap: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .p-tag {
   font-size: 12px;
   background: rgba(147, 51, 234, 0.1);
   color: var(--accent-color);
-  padding: 4px 12px;
+  padding: 4px 10px;
   border-radius: 6px;
   font-weight: 500;
 }
@@ -800,8 +818,8 @@ a {
   align-items: center;
   gap: 10px;
   color: var(--accent-color);
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 900;
+  font-size: 15px; 
   transition: var(--transition);
 }
 
@@ -837,31 +855,34 @@ a {
 }
 
 .services-section h2 {
-  font-size: 36px;
+  font-size: 35px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .services-section h2 span {
   color: var(--accent-color);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
 }
 
 /* Grille des services */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 25px;
 }
 
 .service-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 40px;
+  padding: 30px;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   transition: var(--transition);
   
   /* --- Préparation pour l'animation au scroll --- */
@@ -881,8 +902,8 @@ a {
 }
 
 .service-icon-box {
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   background: rgba(147, 51, 234, 0.1);
   color: var(--accent-color);
   border-radius: 14px;
@@ -893,7 +914,7 @@ a {
 }
 
 .service-card h3 {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--text-primary);
   line-height: 1.4;
@@ -946,6 +967,9 @@ a {
 .faq-section h2 span {
   font-style: italic;
   color: var(--accent-color);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
 }
 
 /* Onglets de catégories */
@@ -965,7 +989,8 @@ a {
   color: var(--text-secondary);
   cursor: pointer;
   transition: var(--transition);
-  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
 }
 
 .faq-tab.active {

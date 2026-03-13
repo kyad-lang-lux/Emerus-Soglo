@@ -33,7 +33,7 @@ function Home() {
     <div>
         <Navbar/>
         <section className="hero-section">
-    
+     
       {/* Côté Gauche : Infos */}
       <div className="hero-content">
         <div className="status-badge">
@@ -70,7 +70,7 @@ function Home() {
       {/* Côté Droit : Visuel */}
       <div className="hero-visual-side">
         <div className="photo-frame">
-          <i className="fa-solid fa-user-tie" style={{fontSize: '50px', opacity: 0.2, marginBottom: '15px'}}></i>
+          {/* <i className="fa-solid fa-user-tie" style={{fontSize: '50px', opacity: 0.2, marginBottom: '15px'}}></i> */}
 
         </div>
 
@@ -80,7 +80,7 @@ function Home() {
     {/* --- Section À Propos --- */}
 <section className="about-section" id="about">
   <div className="about-text-content">
-    <h2>À propos de <span>moi</span></h2>
+    <h2>À propos  <span>de moi</span></h2>
     <p className="about-paragraph">
       Je suis <b>Soglo Julsido Émérus</b>, étudiant en Sciences et Techniques de l'Information Documentaire à l'ENA (Université d'Abomey-Calavi, Bénin). 
       <b> Depuis 2021</b>, je développe des <b>solutions numériques concrètes</b> pour moderniser la gestion de l'information, des archives et des services institutionnels.
@@ -235,10 +235,7 @@ function Home() {
     {/* Projet 1: Myena */}
     <div className="project-card">
       <div className="project-image">
-        {/* Remplace par ton image réelle plus tard */}
-        <div style={{width:'100%', height:'100%', background: 'linear-gradient(45deg, #111, #222)', display:'flex', alignItems:'center', justifyContent:'center'}}>
-           <i className="fa-solid fa-folder-tree" style={{fontSize: '40px', color: '#333'}}></i>
-        </div>
+        <img src="../public/img/myena.png" alt="" />
       </div>
       <div className="project-info">
         <h3>Myena</h3>
@@ -246,14 +243,71 @@ function Home() {
         <div className="project-tags">
           <span className="p-tag">React</span>
           <span className="p-tag">Node.js</span>
+          <span className="p-tag">CSS</span>
         </div>
-        <a href="#" className="project-link">
+        <a href="https://my-ena-1.netlify.app/" className="project-link">
+          Voir le projet <i className="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    {/* Projet 2: Hg  Bénin */}
+    <div className="project-card">
+      <div className="project-image">
+        <img src="../public/img/hgbenin.png" alt="" />
+      </div>
+      <div className="project-info">
+        <h3>HG Bénin</h3>
+        <p>Boutique de vente d'accessoires informatiques.</p>
+        <div className="project-tags">
+          <span className="p-tag">React</span>
+          <span className="p-tag">Node.js</span>
+          <span className="p-tag">CSS</span>
+        </div>
+        <a href="https://hgbenin.com/" className="project-link">
           Voir le projet <i className="fa-solid fa-arrow-right"></i>
         </a>
       </div>
     </div>
 
-    {/* Projet 2: Gestion de Stock */}
+    {/* Projet 3: Pichflow */}
+    <div className="project-card">
+      <div className="project-image">
+        <img src="../public/img/pichflow.png" alt="" />
+      </div>
+      <div className="project-info">
+        <h3>Pichflow </h3>
+        <p>Pichflow automatise le marketing, le copywriting et la facturation dans un interface simple</p>
+        <div className="project-tags">
+          <span className="p-tag">Next js</span>
+          <span className="p-tag">CSS</span>
+        </div>
+        <a href="https://pichflow.vercel.app/" className="project-link">
+          Voir le projet <i className="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+
+    {/* Projet 4: Teleoff */}
+    <div className="project-card">
+      <div className="project-image">
+        <img src="../public/img/teleoff.png" alt="" />
+      </div>
+      <div className="project-info">
+        <h3>Téléoff</h3>
+        <p>Téléoff est la plateforme de gestion centralisée pour vos appareils Shelly. Surveillance, contrôle et automatisation en temps réel.</p>
+        <div className="project-tags">
+          <span className="p-tag">HTML</span>
+          <span className="p-tag">CSS</span>
+          <span className="p-tag">JavaScript</span>
+        </div>
+        <a href="https://nexix-teleoff-frontend.vercel.app/" className="project-link">
+          Voir le projet <i className="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    {/* Projet 5: Gestion de Stock */}
     <div className="project-card">
       <div className="project-image">
          <div style={{width:'100%', height:'100%', background: 'linear-gradient(45deg, #111, #222)', display:'flex', alignItems:'center', justifyContent:'center'}}>
@@ -274,26 +328,8 @@ function Home() {
       </div>
     </div>
 
-    {/* Projet 3: Boutique Tech */}
-    <div className="project-card">
-      <div className="project-image">
-         <div style={{width:'100%', height:'100%', background: 'linear-gradient(45deg, #111, #222)', display:'flex', alignItems:'center', justifyContent:'center'}}>
-           <i className="fa-solid fa-laptop" style={{fontSize: '40px', color: '#333'}}></i>
-        </div>
-      </div>
-      <div className="project-info">
-        <h3>Boutique technologique</h3>
-        <p>Site e-commerce responsive pour la vente d'ordinateurs, téléphones et outils informatiques.</p>
-        <div className="project-tags">
-          <span className="p-tag">HTML</span>
-          <span className="p-tag">CSS</span>
-          <span className="p-tag">JavaScript</span>
-        </div>
-        <a href="#" className="project-link">
-          Voir le projet <i className="fa-solid fa-arrow-right"></i>
-        </a>
-      </div>
-    </div>
+    
+
   </div>
 </section>
 
@@ -354,7 +390,7 @@ function Home() {
 </section>
 
 <section className="faq-section" id="faq">
-        <h2>Tu te poses des <span>questions</span> ? Normal.</h2>
+        <h2>Des <span>questions</span> ? Voiyons.</h2>
 
         <div className="faq-tabs">
           {Object.keys(faqData).map((tab) => (
