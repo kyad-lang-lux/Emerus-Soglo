@@ -9,12 +9,7 @@ function Footer() {
     <footer className="footer-container">
       {/* Icônes de réseaux sociaux - Font Awesome */}
       <div className="footer-socials">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-          <i className="fa-brands fa-github"></i>
-        </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-          <i className="fa-brands fa-linkedin-in"></i>
-        </a>
+       
         <a href="https://www.facebook.com/eme.lux.8609" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fa-brands fa-facebook"></i>
         </a>
@@ -24,6 +19,12 @@ function Footer() {
 
          <a href="https://www.tiktok.com/@stocisme.modern" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fa-brands fa-tiktok"></i>
+        </a>
+         <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <i className="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <i className="fa-brands fa-linkedin-in"></i>
         </a>
       </div>
 

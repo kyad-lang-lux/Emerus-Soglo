@@ -261,7 +261,7 @@ useEffect(() => {
     {/* Projet 1: Myena */}
     <div className="project-card">
       <div className="project-image">
-        <img src="../public/img/myena.png" alt="" />
+        <img src="../img/myena.png" alt="" />
       </div>
       <div className="project-info">
         <h3>Myena</h3>
@@ -279,7 +279,7 @@ useEffect(() => {
     {/* Projet 2: Hg  Bénin */}
     <div className="project-card">
       <div className="project-image">
-        <img src="../public/img/hgbenin.png" alt="" />
+        <img src="../img/hgbenin.png" alt="" />
       </div>
       <div className="project-info">
         <h3>HG Bénin</h3>
@@ -298,7 +298,7 @@ useEffect(() => {
     {/* Projet 3: Pichflow */}
     <div className="project-card">
       <div className="project-image">
-        <img src="../public/img/pichflow.png" alt="" />
+        <img src="../img/pichflow.png" alt="" />
       </div>
       <div className="project-info">
         <h3>Pichflow </h3>
@@ -317,7 +317,7 @@ useEffect(() => {
     {/* Projet 4: Teleoff */}
     <div className="project-card">
       <div className="project-image">
-        <img src="../public/img/teleoff.png" alt="" />
+        <img src="../img/teleoff.png" alt="" />
       </div>
       <div className="project-info">
         <h3>Téléoff</h3>
