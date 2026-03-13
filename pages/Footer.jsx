@@ -15,8 +15,15 @@ function Footer() {
         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fa-brands fa-linkedin-in"></i>
         </a>
-        <a href="mailto:votre-email@exemple.com" className="social-icon">
+        <a href="https://www.facebook.com/eme.lux.8609" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <i className="fa-brands fa-facebook"></i>
+        </a>
+        <a href="mailto:emerussoglo@gmail.com" className="social-icon">
           <i className="fa-solid fa-envelope"></i>
+        </a>
+
+         <a href="https://www.tiktok.com/@stocisme.modern" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <i className="fa-brands fa-tiktok"></i>
         </a>
       </div>
 

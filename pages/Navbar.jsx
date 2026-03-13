@@ -19,7 +19,7 @@ function Navbar() {
     // { name: 'Formation', href: '#formation' },
     { name: 'Services', href: '#services' },
     // { name: 'YouTube', href: '#youtube' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Contact', href: 'https://wa.me/2290141516389' }
   ];
 
   return (
@@ -57,7 +57,7 @@ function Navbar() {
       <button className="contact-btn-desktop">
         {/* Icône de paper plane de Font Awesome */}
         <i className="fa-solid fa-paper-plane"></i>
-        Contact
+        <a href="https://wa.me/2290141516389">Contact</a>
       </button>
 
       {/* --- Menu Hamburger Mobile --- */}

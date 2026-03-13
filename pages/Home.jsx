@@ -1,11 +1,31 @@
 // pages/Home.jsx
 import React from 'react';
 import { useState } from 'react';
+import { useEffect } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import '../src/style.css';
 
 function Home() {
+useEffect(() => {
+    const observerOptions = {
+      threshold: 0.15 // Déclenche l'animation quand 15% de l'élément est visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, observerOptions);
+
+    // On observe tous les éléments qui ont la classe "reveal"
+    const elements = document.querySelectorAll('.reveal');
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect(); // Nettoyage
+  }, []);
 
   const [activeTab, setActiveTab] = useState('Archivage');
   const [openQuestion, setOpenQuestion] = useState(null);
@@ -32,10 +52,10 @@ function Home() {
   return (
     <div>
         <Navbar/>
-        <section className="hero-section">
+        <section className="hero-section" id='top'>
      
       {/* Côté Gauche : Infos */}
-      <div className="hero-content">
+      <div className="hero-content" >
         <div className="status-badge">
           <span className="dot-pulse"></span>
           Disponible — missions & collaborations
@@ -58,12 +78,18 @@ function Home() {
         <div className="hero-btns">
           <button className="primary-btn">
             <i className="fa-solid fa-rocket"></i>
-            Voir mes projets
+            <a href="#projects">Voir mes projets</a> 
           </button>
           <button className="secondary-btn">
-            <i className="fa-solid fa-envelope"></i>
-            Me contacter
-          </button>
+  <i className="fa-brands fa-whatsapp"></i>
+  <a 
+    href="https://wa.me/2290141516389" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    Me contacter
+  </a>
+</button>
         </div>
       </div>
 
@@ -78,7 +104,7 @@ function Home() {
     </section>
 
     {/* --- Section À Propos --- */}
-<section className="about-section" id="about">
+<section className="about-section reveal"  id="about">
   <div className="about-text-content">
     <h2>À propos  <span>de moi</span></h2>
     <p className="about-paragraph">
@@ -91,7 +117,7 @@ function Home() {
     </div>
   </div>
 
-  <div className="about-cards-grid">
+  <div className="about-cards-grid reveal">
     {/* Carte 1 */}
     <div className="about-card">
       <div className="card-icon">
@@ -133,7 +159,7 @@ function Home() {
 
 
 {/* --- Section Compétences --- */}
-<section className="skills-section" id="skills">
+<section className="skills-section reveal" id="skills">
   <div className="skills-header">
     <h2>Mes <span>compétences</span></h2>
     <p className="skills-subtitle">
@@ -228,7 +254,7 @@ function Home() {
 
 
 {/* --- Section Projets --- */}
-<section className="projects-section" id="projects">
+<section className="projects-section reveal" id="projects">
   <h2>Mes <span>Projets</span></h2>
 
   <div className="projects-grid">
@@ -335,7 +361,7 @@ function Home() {
 
 
 {/* --- Section Services --- */}
-<section className="services-section" id="services">
+<section className="services-section reveal"  id="services">
   <h2>Mes <span>services</span></h2>
 
   <div className="services-grid">
@@ -420,9 +446,16 @@ function Home() {
             </div>
           ))}
         </div>
+
+
+
+
       </section>
 
 
+ <a href="#top" className="back-to-top" aria-label="Retour en haut">
+        <i className="fa-solid fa-circle-arrow-up"></i>
+      </a>
 
 
 

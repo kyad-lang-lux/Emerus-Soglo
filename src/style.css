@@ -16,7 +16,9 @@
   margin: 0;
   padding: 0;
 }
-
+html {
+   scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
@@ -157,6 +159,7 @@ a {
   border-radius: 50px;
   font-weight: 800;
   font-size: 17px;
+  font-family: 'Poppins', sans-serif;
   border: none;
   cursor: pointer;
   transition: var(--transition);
@@ -190,6 +193,9 @@ a {
 /* --- Média Queries pour Responsive (Mobile) --- */
 @media screen and (max-width: 1024px) {
   /* Masquer le menu desktop */
+  .navbar-container {
+    padding: 20px;
+  }
   .nav-links, .contact-btn-desktop {
     display: none;
   }
@@ -267,6 +273,7 @@ a {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    font-family: "Poppins";
   }
 }
 
@@ -409,7 +416,7 @@ a {
 }
 
 .photo-frame {
-  width: 90%;
+  width: 100%;
   aspect-ratio: 1/1;
   border: 2px solid var(--accent-color);
   border-radius: 24px;
@@ -460,19 +467,37 @@ a {
 
 /* --- Responsive --- */
 @media (max-width: 992px) {
+
   .hero-section {
     grid-template-columns: 1fr;
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px 20px;
+  }
+  .hero-section .hero-title {
+    margin-bottom: 15px;
   }
   .hero-description {
-    margin: 0 auto 40px;
+    margin: 0 auto 20px;
     border-left: none;
-    border-top: 2px solid var(--accent-color);
-    padding: 20px 0 0;
+    /* border-top: 2px solid var(--accent-color); */
+    padding: 15px 0 0;
+    font-size: 16px;
+
   }
   .tech-badges, .hero-btns {
     justify-content: center;
+    padding: 0;
+    gap: 5px;
+  }
+  .hero-section .primary-btn {
+    gap: 5px;
+    padding: 10px 10px;
+  
+  }
+  .hero-section .secondary-btn {
+    gap: 5px;
+    padding: 10px 10px;
+  
   }
 }
 
@@ -577,7 +602,7 @@ a {
   .about-section {
     grid-template-columns: 1fr;
     text-align: left;
-    gap: 40px;
+    gap: 30px;
   }
   
   .about-cards-grid {
@@ -821,6 +846,7 @@ a {
   font-weight: 900;
   font-size: 15px; 
   transition: var(--transition);
+  
 }
 
 .project-link i {
@@ -1117,3 +1143,76 @@ a {
     padding: 40px 20px 20px;
   }
 }
+
+
+
+/* --- BOUTON RETOUR EN HAUT --- */
+.back-to-top {
+  position: fixed;
+  bottom: 5px; /* Distance du bas */
+  right: 10px; /* Distance de la droite */
+  width: 35px;
+  height: 35px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  z-index: 999;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.back-to-top:hover {
+  background-color: #000; /* Change de couleur au survol */
+}
+
+/* Optionnel : Animation de flottement continue */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+.back-to-top {
+  animation: bounce 3s infinite ease-in-out;
+}
+
+/* Cache le bouton sur la barre de navigation mobile pour éviter les chevauchements */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 10px; /* On le remonte pour ne pas gêner la mobile-tab-bar */
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+  }
+}
+
+
+/* État initial : caché et décalé */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition-delay: 0.1s; /* Petit délai pour plus de fluidité */
+}
+
+/* État final : quand la section est atteinte */
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optionnel : Effet de cascade pour les grilles (décalage entre les cartes) */
+.reveal.is-visible:nth-child(2) { transition-delay: 0.2s; }
+.reveal.is-visible:nth-child(3) { transition-delay: 0.3s; }
+.reveal.is-visible:nth-child(4) { transition-delay: 0.4s; }
