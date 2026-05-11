@@ -30,20 +30,39 @@ useEffect(() => {
   const [activeTab, setActiveTab] = useState('Archivage');
   const [openQuestion, setOpenQuestion] = useState(null);
 
-  const faqData = {
-    'Archivage': [
-      { q: "Pourquoi numériser mes archives physiques ?", a: "La numérisation sécurise vos données contre l'usure physique et permet une recherche instantanée par mots-clés, optimisant ainsi votre temps." },
-      { q: "Qu'est-ce qu'un système de gestion documentaire ?", a: "C'est un logiciel (ou SaaS) que je conçois pour organiser, stocker et suivre vos documents numériques de manière structurée." }
-    ],
-    'Développement': [
-      { q: "Quelles technologies utilisez-vous ?", a: "Je me spécialise en Next.js, React et Node.js pour garantir des interfaces rapides, modernes et évolutives." },
-      { q: "Mon site sera-t-il adapté aux mobiles ?", a: "Absolument. Tous mes projets sont conçus en 'Responsive Design' pour fonctionner parfaitement sur smartphone, tablette et PC." }
-    ],
-    'Collaboration': [
-      { q: "Proposez-vous une maintenance après projet ?", a: "Oui, j'offre un accompagnement technique pour m'assurer que votre solution reste performante et à jour." },
-      { q: "Comment se déroule un projet avec vous ?", a: "On commence par un audit de vos besoins, suivi d'une phase de design (Figma), du développement, et enfin du déploiement." }
-    ]
-  };
+ const faqData = {
+  'Archivage': [
+    { q: "Pourquoi numériser mes archives physiques ?", a: "La numérisation sécurise vos données contre l'usure physique et permet une recherche instantanée par mots-clés, optimisant ainsi votre temps." },
+    { q: "Qu'est-ce qu'un système de gestion documentaire ?", a: "C'est un logiciel (ou SaaS) que je conçois pour organiser, stocker et suivre vos documents numériques de manière structurée." },
+
+    // --- AJOUTS ---
+    { q: "En quoi votre profil d’archiviste et de développeur est-il un avantage ?", a: "Je conçois des solutions numériques en comprenant à la fois les exigences techniques et les bonnes pratiques archivistiques. Cela garantit des outils fiables, adaptés et conformes aux standards du domaine." },
+    { q: "Pouvez-vous mettre en place un système d’archivage complet ?", a: "Oui. Je peux vous accompagner depuis l’audit documentaire jusqu’à la mise en place d’un SGED, en intégrant des workflows, métadonnées et processus de conservation." }
+  ],
+
+  'Développement': [
+    { q: "Quelles technologies utilisez-vous ?", a: "Je me spécialise en Next.js, React et Node.js pour garantir des interfaces rapides, modernes et évolutives." },
+    { q: "Mon site sera-t-il adapté aux mobiles ?", a: "Absolument. Tous mes projets sont conçus en 'Responsive Design' pour fonctionner parfaitement sur smartphone, tablette et PC." },
+
+    // --- AJOUTS ---
+    { q: "Pouvez-vous intégrer un backend ou une base de données ?", a: "Oui. J’utilise Node.js, Express et diverses bases (MongoDB, SQL) pour créer des API sécurisées et fiables selon les besoins du projet." },
+    { q: "Combien de temps prend la conception d’un projet ?", a: "La durée dépend de sa complexité, mais je fournis systématiquement une estimation claire après l’audit initial." }
+  ],
+
+  'Collaboration': [
+    { q: "Proposez-vous une maintenance après projet ?", a: "Oui, j'offre un accompagnement technique pour m'assurer que votre solution reste performante et à jour." },
+    { q: "Comment se déroule un projet avec vous ?", a: "On commence par un audit de vos besoins, suivi d'une phase de design (Figma), du développement, et enfin du déploiement." },
+
+    // --- AJOUTS ---
+    { q: "Travaillez-vous à distance ?", a: "Oui, je collabore à distance ou en présentiel selon les besoins. Tous les échanges peuvent se faire par visio ou messagerie." },
+    { q: "Acceptez-vous les petites missions ou micro-projets ?", a: "Oui. Que ce soit une page web, un audit documentaire ou une identité visuelle, je prends également en charge les projets de petite envergure." }
+  ],
+
+  'Création de contenu': [
+    { q: "Créez-vous du contenu professionnel ?", a: "Oui. Je produis du contenu clair, pédagogique et orienté valeur ajoutée, notamment pour le numérique et la gestion documentaire." },
+    { q: "En quoi consiste votre chaîne YouTube Sagesse Stoïcienne ?", a: "Je partage des principes stoïciens modernes pour aider chacun à développer discipline, clarté mentale et efficacité personnelle." }
+  ]
+};
 
   const toggleQuestion = (index) => {
     setOpenQuestion(openQuestion === index ? null : index);
@@ -189,12 +208,11 @@ useEffect(() => {
       </div>
       <h3>Développement Web</h3>
       <div className="skill-tags">
-        <span className="skill-tag">React</span>
-        <span className="skill-tag">Next.js</span>
-        <span className="skill-tag">Node.js</span>
+        <span className="skill-tag">React js</span>
+        <span className="skill-tag">Next js</span>
+        <span className="skill-tag">Node js</span>
         <span className="skill-tag">HTML/CSS/JS</span>
         <span className="skill-tag">Figma</span>
-        <span className="skill-tag">Vite</span>
       </div>
     </div>
 
@@ -267,8 +285,8 @@ useEffect(() => {
         <h3>Myena</h3>
         <p>Plateforme numérique conçue pour améliorer la gestion des archives et de la documentation.</p>
         <div className="project-tags">
-          <span className="p-tag">React</span>
-          <span className="p-tag">Node.js</span>
+          <span className="p-tag">React js</span>
+          <span className="p-tag">Node js</span>
           <span className="p-tag">CSS</span>
         </div>
         <a href="https://my-ena-1.netlify.app/" className="project-link">
@@ -285,8 +303,8 @@ useEffect(() => {
         <h3>HG Bénin</h3>
         <p>Boutique de vente d'accessoires informatiques.</p>
         <div className="project-tags">
-          <span className="p-tag">React</span>
-          <span className="p-tag">Node.js</span>
+          <span className="p-tag">React js </span>
+          <span className="p-tag">Node js</span>
           <span className="p-tag">CSS</span>
         </div>
         <a href="https://hgbenin.com/" className="project-link">
@@ -323,9 +341,8 @@ useEffect(() => {
         <h3>Téléoff</h3>
         <p>Téléoff est la plateforme de gestion centralisée pour vos appareils Shelly. Surveillance, contrôle et automatisation en temps réel.</p>
         <div className="project-tags">
-          <span className="p-tag">HTML</span>
-          <span className="p-tag">CSS</span>
-          <span className="p-tag">JavaScript</span>
+          <span className="p-tag">React js</span>
+          <span className="p-tag">Node js</span>
         </div>
         <a href="https://tele-off.com/" className="project-link">
           Voir le projet <i className="fa-solid fa-arrow-right"></i>
