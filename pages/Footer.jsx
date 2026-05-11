@@ -23,7 +23,7 @@ function Footer() {
          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fa-brands fa-github"></i>
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <a href="https://www.linkedin.com/in/em%C3%A9rus-soglo-396aba3b9/" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fa-brands fa-linkedin-in"></i>
         </a>
       </div>

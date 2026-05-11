@@ -19,7 +19,7 @@ function Navbar() {
     // { name: 'Formation', href: '#formation' },
     { name: 'Services', href: '#services' },
     // { name: 'YouTube', href: '#youtube' },
-    { name: 'Contact', href: 'https://wa.me/2290141516389' }
+    // { name: 'Contact', href: 'https://wa.me/2290141516389' }
   ];
 
   return (
@@ -59,7 +59,7 @@ function Navbar() {
         <i className="fa-solid fa-paper-plane"></i>
         <a href="https://wa.me/2290141516389">Contact</a>
       </button>
-
+ 
       {/* --- Menu Hamburger Mobile --- */}
       <div 
         className={`hamburger-menu ${isMenuOpen ? 'is-active' : ''}`}

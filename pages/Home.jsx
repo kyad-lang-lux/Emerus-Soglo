@@ -327,11 +327,31 @@ useEffect(() => {
           <span className="p-tag">CSS</span>
           <span className="p-tag">JavaScript</span>
         </div>
-        <a href="https://nexix-teleoff-frontend.vercel.app/" className="project-link">
+        <a href="https://tele-off.com/" className="project-link">
           Voir le projet <i className="fa-solid fa-arrow-right"></i>
         </a>
       </div>
     </div>
+    <div className="project-card">
+      <div className="project-image">
+        <img src="../img/pharma24.png" alt="" />
+      </div>
+      <div className="project-info">
+        <h3>Pharma24</h3>
+        <p>Application web permettant de trouver une pharmacie de garde en temps réel dans sa zone, scanner les codes qr et codes bar des documents.</p>
+        <div className="project-tags">
+          <span className="p-tag">HTML</span>
+          <span className="p-tag">CSS</span>
+          <span className="p-tag">JavaScript</span>
+          <span className="p-tag">Next js</span>
+        </div>
+        <a href="https://pharma24.vercel.app/" className="project-link">
+          Voir le projet <i className="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+   
 
     {/* Projet 5: Gestion de Stock */}
     <div className="project-card">
@@ -454,7 +474,7 @@ useEffect(() => {
 
 
  <a href="#top" className="back-to-top" aria-label="Retour en haut">
-        <i className="fa-solid fa-circle-arrow-up"></i>
+        <i className="fa-solid fa-play triangle-up"></i>
       </a>
 
 
