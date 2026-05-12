@@ -453,7 +453,7 @@ useEffect(() => {
 </section>
 
 <section className="faq-section" id="faq">
-        <h2>Des <span>questions</span> ? Voiyons.</h2>
+        <h2>Des <span>préoccupations</span> ? </h2>
 
         <div className="faq-tabs">
           {Object.keys(faqData).map((tab) => (
